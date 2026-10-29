@@ -1,0 +1,1 @@
+{% extends 'base.html' %}{% block title %}Gallery | {{site.name}}{% endblock %}{% block content %}<section class="pagehead"><h1>Gallery</h1></section><section><div class="gallery">{% for g in gallery %}<figure><img src="{{g.image}}" alt="{{g.caption or 'Gallery image'}}"><figcaption>{{g.caption}}</figcaption></figure>{% endfor %}</div></section>{% endblock %}
